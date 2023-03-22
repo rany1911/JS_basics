@@ -62,3 +62,46 @@ function multiplyNumeric() {
 multiplyNumeric(catalog);
 
 alert(catalog.jeans);
+
+// calculator
+let calculator = {
+    read() {
+        this.x = +prompt("Enter the first number");
+        this.y = +prompt("Enter the second number");
+    },
+
+    sum() {
+        let summary = this.x + this.y;
+        return summary;
+    },
+
+    mul() {
+        let multiply = this.x * this.y;
+        return multiply;
+    }
+}
+
+calculator.read();
+alert(calculator.sum());
+alert(calculator.mul());
+
+// call chain
+let ladder = {
+    step: 0,
+
+    up() {
+        this.step++;
+        return this;
+    },
+
+    down() {
+        this.step--;
+        return this;
+    },
+
+    showStep() {
+        alert(this.step);
+        return this;
+    }
+}
+ladder.up().up().up().showStep().down().showStep();
