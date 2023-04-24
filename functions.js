@@ -1,10 +1,10 @@
 // ? or ||
 function checkAge(age) {
-    return (age > 18) ? true : confirm("Did parets aprove?");
+    return (age > 18) ? true : confirm("Did parents aprove?");
 }
 
 function checkAge(age) {
-    return (age > 18) || confirm("Did parets aprove?");
+    return (age > 18) || confirm("Did parents aprove?");
 }
 
 // min(a, b)
