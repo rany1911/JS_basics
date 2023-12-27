@@ -1,9 +1,9 @@
 //sum of object propertys
 let salaries = {
-    "Mary": 1500,
-    "John": 1400,
-    "David": 1550,
-    "Kate": 1300
+    'Mary': 1500,
+    'John': 1400,
+    'David': 1550,
+    'Kate': 1300
 }
 
 function sumSalaries(salaries) {
